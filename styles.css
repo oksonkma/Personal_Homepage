@@ -1,3 +1,13 @@
+:root{
+  --color-main:#21b1d5;
+  --color-secondary:#eebe11;
+  --color-bg:rgba(0, 0, 0, .8);
+
+
+}
+
+
+
 body {
     margin : 0;
     background-image: url('abstract.jpg');
@@ -9,32 +19,33 @@ body {
   }
   
   .window {
-    font-family: Impact, Haettenschweiler, sans-serif;
+    font-family:'Oswald', sans-serif;;
     display: flex;
     flex-direction: column;
     padding-top: 10em;
     align-items: center;
-    color: rgb(225, 225, 249);
-
-   
+    color: var(--color-main) 
   }
   
   .clock {
-    
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
+    border: 7px double var(--color-secondary);
+    border-radius: 15px;
+    background-color: var(--color-bg) ;
+    color: var(--color-secondary);
+   font-weight: 500;
+    font-size: 4rem;
     text-shadow: 5px 5px 5px #000000;
+    margin-bottom: 1rem;
+    padding: 12px;
+    
   }
   
   
   .container {
     display:flex;
     flex-wrap: no-wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    
     width: 100%;
   }
   
@@ -42,26 +53,45 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 400px;
-    border: 6px double #eebe11;
+    min-height: 250px;
+    width: 18%;
+    min-width: 15%;
+    border: 7px double var(--color-secondary);
     border-radius: 20px;
-    background-color:rgba(0, 0, 0, .8) ;
+    background-color: var(--color-bg) ;
+    padding: 15px;
+    font-size: 1.5rem;
+    
   }
   
-  ul.list>li>a {
-    color: rgb(225, 225, 249);
-    text-decoration: none;
+  h1.bookmark-title{
+    font-size:1.5em ;
   }
-  
-  ul.list {
-    list-style-type: square;
-    color: white;
-  }
-  
   h1 {
     font-size: 2em;
     font-weight: lighter;
     font-style: normal;
     font-variant: small-caps;
   }
+  
+  ul.list {
+    list-style-type: none;
+    padding-left: 5px;
+    
+  }
+  
+  ul.list>li>a {
+    color: rgb(225, 225, 249);
+    text-decoration: none;
+    font-size: .9em;
+
+  }
+
+  ul.list>li>a:hover {
+    color:var(--color-main) ;
+    font-weight:800;
+    font-size: .9em;
+    transition: all .05s ease-in  ;
+
+  } 
   
