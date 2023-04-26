@@ -1,0 +1,67 @@
+body {
+    margin : 0;
+    background-image: url('abstract.jpg');
+    background-position: center;
+    background-repeat: cover;
+    background-size: cover;
+    height:100vh;
+    overflow-y: hidden;
+  }
+  
+  .window {
+    font-family: Impact, Haettenschweiler, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10em;
+    align-items: center;
+    color: rgb(225, 225, 249);
+
+   
+  }
+  
+  .clock {
+    
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px #000000;
+  }
+  
+  
+  .container {
+    display:flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100%;
+  }
+  
+  .link-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 400px;
+    border: 6px double #eebe11;
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, .8) ;
+  }
+  
+  ul.list>li>a {
+    color: rgb(225, 225, 249);
+    text-decoration: none;
+  }
+  
+  ul.list {
+    list-style-type: square;
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2em;
+    font-weight: lighter;
+    font-style: normal;
+    font-variant: small-caps;
+  }
+  
