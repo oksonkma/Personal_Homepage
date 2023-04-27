@@ -5,9 +5,6 @@
 
 
 }
-
-
-
 body {
     margin : 0;
     background-image: url('abstract.jpg');
@@ -15,14 +12,31 @@ body {
     background-repeat: cover;
     background-size: cover;
     height:100vh;
-    overflow-y: hidden;
+    
   }
-  
+  #search {
+    display:none;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-bg);
+    box-sizing: border-box;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+ #search-field {
+  width: 80%;
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-main);
+  color:#a7d4f9;
+  border-radius: 1em;
+  font-size: 5rem;
+ }
   .window {
     font-family:'Oswald', sans-serif;;
     display: flex;
     flex-direction: column;
-    padding-top: 10em;
+    padding-top: 7em;
     align-items: center;
     color: var(--color-main) 
   }
@@ -35,8 +49,11 @@ body {
    font-weight: 500;
     font-size: 4rem;
     text-shadow: 5px 5px 5px #000000;
-    margin-bottom: 1rem;
-    padding: 12px;
+    margin-bottom: 3rem;
+    padding: 10px;
+    min-width: 220px;
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25), 0 4px 9px rgba(0, 0, 0, 0.2);
+
     
   }
   
@@ -47,13 +64,16 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    
   }
   
   .link-container {
     display:flex;
+    box-shadow: 0 12px 18px rgba(0, 0, 0, 0.25), 0 4px 9px rgba(0, 0, 0, 0.2);
+
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 250px;
+    min-height: 370px;
     width: 18%;
     min-width: 15%;
     border: 7px double var(--color-secondary);
@@ -94,4 +114,37 @@ body {
     transition: all .05s ease-in  ;
 
   } 
+  @media only screen and (max-width:870px){
+   .container{
+    flex-direction: column;
+    align-items: center;
+    gap: .7em;
+   }
+   .window{
+    padding-top: 2em;
+   }
+   .clock{
+
+    margin-bottom: 20px;
+   }
+   .link-container{
+    width:70%;
+    min-height:fit-content;
+   }
+   body {
+    height: 100%;
+    background-image: url('abstractrotated.jpg');
+  }
+   .container:last-child{
+    margin-bottom: 1em;
+   }
+   h1.bookmark-title {
+    margin-top: 0;
+    margin-bottom: .1em;
+    font-size: 1.6em;
+   }
+   ul.list{
+    margin:0;
+   }
+  }
   
