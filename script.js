@@ -13,7 +13,7 @@ const searchFieldElem= document.getElementById('search-field') ;
 const searchString= "https://duckduckgo.com/?q="
 document.addEventListener("keydown",event=>{
     if (event.key==" "){
-        searchFieldElem.value ='';
+        
         searchElem.style.display='flex';
         searchFieldElem.focus();
     }else if (event.key =="Escape"){
